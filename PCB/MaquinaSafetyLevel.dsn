@@ -24,13 +24,13 @@
       (path pcb 0  136555 -33335.6  137838 -33590.7  139077 -34011.2  140250 -34589.7
             141338 -35316.5  142321 -36178.9  143184 -37162.4  143910 -38250
             144489 -39423.2  144909 -40661.8  145164 -41944.7  145250 -43250
-            145250 -103250  145164 -104555  144909 -105838  144489 -107077
-            143910 -108250  143184 -109338  142321 -110321  141338 -111184
-            140250 -111910  139077 -112489  137838 -112909  136555 -113164
-            135250 -113250  55250 -113250  53944.7 -113164  52661.8 -112909
-            51423.2 -112489  50250 -111910  49162.4 -111184  48178.9 -110321
-            47316.5 -109338  46589.7 -108250  46011.2 -107077  45590.7 -105838
-            45335.6 -104555  45250 -103250  45250 -43250  45335.6 -41944.7
+            145250 -123250  145164 -124555  144909 -125838  144489 -127077
+            143910 -128250  143184 -129338  142321 -130321  141338 -131184
+            140250 -131910  139077 -132489  137838 -132909  136555 -133164
+            135250 -133250  55250 -133250  53944.7 -133164  52661.8 -132909
+            51423.2 -132489  50250 -131910  49162.4 -131184  48178.9 -130321
+            47316.5 -129338  46589.7 -128250  46011.2 -127077  45590.7 -125838
+            45335.6 -124555  45250 -123250  45250 -43250  45335.6 -41944.7
             45590.7 -40661.8  46011.2 -39423.2  46589.7 -38250  47316.5 -37162.4
             48178.9 -36178.9  49162.4 -35316.5  50250 -34589.7  51423.2 -34011.2
             52661.8 -33590.7  53944.7 -33335.6  55250 -33250  135250 -33250
@@ -45,85 +45,109 @@
     )
   )
   (placement
+    (component "PowerSupplies:RAC01-GB_PowerSupply"
+      (place U3 91500 -127250 front 0 (PN "RAC01-GB_PowerSupply"))
+    )
     (component Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm
-      (place C1 134750 -62750 front 270 (PN 1nF))
-      (place C3 76750 -59750 front 90 (PN 1nF))
+      (place C1 68500 -76500 front 270 (PN 1nF))
+      (place C3 56750 -76500 front 270 (PN 1nF))
     )
     (component Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm::1
-      (place C2 126750 -62750 front 270 (PN 10nF))
+      (place C2 62500 -76500 front 270 (PN 10nF))
     )
     (component Capacitor_THT:C_Disc_D8.0mm_W5.0mm_P10.00mm
-      (place C4 95750 -101500 front 180 (PN 22pF))
+      (place C4 118750 -88250 front 180 (PN 22pF))
     )
     (component Capacitor_THT:C_Disc_D8.0mm_W5.0mm_P10.00mm::1
-      (place C5 70750 -101500 front 0 (PN 22pF))
+      (place C5 80750 -88250 front 0 (PN 22pF))
     )
     (component Capacitor_THT:C_Rect_L18.0mm_W5.0mm_P15.00mm_FKS3_FKP3
-      (place C6 70250 -88750 front 180 (PN 0.1uF))
+      (place C6 128250 -56250 front 180 (PN 0.1uF))
     )
     (component Capacitor_THT:C_Rect_L18.0mm_W5.0mm_P15.00mm_FKS3_FKP3::1
-      (place C7 104250 -101500 front 0 (PN 0.1uF))
+      (place C7 113250 -65750 front 0 (PN 0.1uF))
     )
     (component "Diode_THT:D_A-405_P7.62mm_Horizontal"
-      (place D1 83750 -61250 front 90 (PN D))
+      (place D1 56750 -67500 front 90 (PN D))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical
-      (place J1 58750 -60750 front 180 (PN ICSP))
+      (place J1 134757 -79926.8 front 180 (PN ICSP))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
-      (place R1 126750 -49750 front 270 (PN 470))
+      (place R1 58750 -87000 front 0 (PN 470))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
-      (place R2 102250 -81250 front 90 (PN 2.2K))
-      (place R5 91250 -52250 front 270 (PN 330))
-      (place R7 112000 -81000 front 0 (PN 330))
-      (place R9 50750 -78750 front 90 (PN 10K))
+      (place R2 74750 -86500 front 90 (PN 2.2K))
+      (place R5 102750 -56000 front 270 (PN 150))
+      (place R7 95250 -56000 front 270 (PN 10K))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::1
-      (place R3 99750 -52250 front 270 (PN 10K))
-      (place R4 69250 -62750 front 90 (PN 1M))
-      (place R6 95250 -88750 front 0 (PN 330))
-      (place R8 122250 -88750 front 180 (PN 10K))
+      (place R3 50750 -58500 front 270 (PN 10K))
+      (place R4 50750 -76250 front 270 (PN 1M))
+      (place R6 78750 -66000 front 90 (PN 150))
+      (place R10 138000 -88250 front 180 (PN 10K))
     )
     (component "Package_DIP:DIP-8_W7.62mm"
-      (place U1 109250 -52250 front 0 (PN NE555))
+      (place U1 71250 -59750 front 270 (PN NE555))
     )
     (component "Package_DIP:DIP-28_W7.62mm"
-      (place U2 60000 -79000 front 90 (PN "ATmega328-PU"))
-    )
-    (component "Package_TO_SOT_THT:TO-92_HandSolder"
-      (place Q1 114250 -70250 front 180 (PN 2N3904))
+      (place U2 83250 -81250 front 90 (PN "ATmega328-PU"))
     )
     (component "Crystal:Crystal_HC49-4H_Vertical"
-      (place Y1 81750 -88750 front 0 (PN Crystal))
-    )
-    (component "TerminalBlocks:MB312-254_TerminalBlock_2Way"
-      (place J2 69250 -41250 front 180 (PN Control))
+      (place Y1 97250 -88250 front 0 (PN Crystal))
     )
     (component "TerminalBlocks:MB312-254_TerminalBlock_3Way"
-      (place J3 83750 -41250 front 180 (PN LEDs))
-      (place J5 112250 -41250 front 180 (PN PD5))
+      (place J3 77830 -43250 front 180 (PN LEDs))
+      (place J5 97850 -43250 front 180 (PN PD5))
+      (place J2 67850 -43250 front 180 (PN Control))
+      (place J6 107750 -43250 front 180 (PN PC1))
+      (place J8 127750 -43250 front 180 (PN PC3))
     )
     (component Buzzers:Buzzer_10.16pitch
-      (place BZ1 130250 -83250 front 0 (PN Buzzer))
+      (place BZ1 52000 -100250 front 0 (PN Buzzer))
     )
     (component "TerminalBlocks:MB312-254_TerminalBlock_3Way::1"
-      (place J4 97750 -41250 front 180 (PN PD4))
+      (place J4 87850 -43250 front 180 (PN PD4))
+      (place J7 117750 -43250 front 180 (PN PC2))
     )
-    (component "TerminalBlocks:MB312-254_TerminalBlock_2Way::1"
-      (place J6 123750 -41250 front 180 (PN Power))
+    (component MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad
+      (place H1 55250 -43250 front 0 (PN MountingHole_Pad))
+      (place H3 55250 -123250 front 0 (PN MountingHole_Pad))
+    )
+    (component MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad::1
+      (place H2 135250 -43250 front 0 (PN MountingHole_Pad))
+      (place H4 135250 -123250 front 0 (PN MountingHole_Pad))
+    )
+    (component TerminalBlocks:5.08_PCB_2Way
+      (place J9 68750 -117750 front 0 (PN AC_Input))
+    )
+    (component "TerminalBlocks:MB312-254_TerminalBlock_4Way"
+      (place J10 133750 -103000 front 90 (PN I2C))
+    )
+    (component "Package_TO_SOT_THT:TO-92_HandSolder"
+      (place Q1 86750 -59750 front 270 (PN 2N3904))
     )
     (component Logo:logo
-      (place G*** 80000 -109500 front 0 (PN LOGO))
-    )
-    (component MountingHole:MountingHole_4.3mm_M4_DIN965_Pad
-      (place REF1 55250 -43250 front 0 (PN MountingHole_4.3mm_M4_DIN965_Pad))
-      (place REF2 135250 -43250 front 0 (PN MountingHole_4.3mm_M4_DIN965_Pad))
-      (place REF3 55250 -103250 front 0 (PN MountingHole_4.3mm_M4_DIN965_Pad))
-      (place REF4 135250 -103250 front 0 (PN MountingHole_4.3mm_M4_DIN965_Pad))
+      (place G2 95750 -96750 front 0 (PN LOGO))
+      (place G1 100000 -103500 front 0 (PN LOGO))
     )
   )
   (library
+    (image "PowerSupplies:RAC01-GB_PowerSupply"
+      (outline (path signal 150  -3810 19050  31750 19050))
+      (outline (path signal 150  31750 19050  31750 -1270))
+      (outline (path signal 150  29210 -3810  -3810 -3810))
+      (outline (path signal 150  -3810 -3810  -3810 19050))
+      (outline (path signal 150  29210 -3810  31750 -1270))
+      (outline (path signal 150  -5715 15240  -7620 15240))
+      (outline (path signal 150  -7620 15240  -7620 8890))
+      (outline (path signal 150  -5715 0  -7620 0))
+      (outline (path signal 150  -7620 0  -7620 5715))
+      (pin Round[A]Pad_2000_um 1 0 0)
+      (pin Round[A]Pad_2000_um 2 0 15240)
+      (pin Round[A]Pad_2000_um 3 28000 15240)
+      (pin Round[A]Pad_2000_um 4 28000 7620)
+    )
     (image Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm
       (outline (path signal 100  0 1250  0 -1250))
       (outline (path signal 100  0 -1250  5000 -1250))
@@ -407,17 +431,6 @@
       (pin Oval[A]Pad_1600x1600_um 14 0 -33020)
       (pin Oval[A]Pad_1600x1600_um 28 7620 0)
     )
-    (image "Package_TO_SOT_THT:TO-92_HandSolder"
-      (outline (path signal 120  -530 -1850  3070 -1850))
-      (outline (path signal 100  -500 -1750  3000 -1750))
-      (outline (path signal 50  -1460 3050  4000 3050))
-      (outline (path signal 50  -1450 3050  -1460 -2010))
-      (outline (path signal 50  4000 -2010  4000 3050))
-      (outline (path signal 50  4000 -2010  -1460 -2010))
-      (pin RoundRect[A][0,400]Pad_1100x1800_276.046_um 2 1270 1270)
-      (pin "RoundRect[A][0,-400]Pad_1100x1800_276.046_um" 3 2540 0)
-      (pin "Rect[A][0,-400]Pad_1100x1800_um" 1 0 0)
-    )
     (image "Crystal:Crystal_HC49-4H_Vertical"
       (outline (path signal 100  -760 2325  5640 2325))
       (outline (path signal 100  -760 -2325  5640 -2325))
@@ -431,18 +444,6 @@
       (outline (path signal 50  8500 2800  -3600 2800))
       (pin Round[A]Pad_1500_um 1 0 0)
       (pin Round[A]Pad_1500_um 2 4880 0)
-    )
-    (image "TerminalBlocks:MB312-254_TerminalBlock_2Way"
-      (outline (path signal 150  4040 3100  4040 -3100))
-      (outline (path signal 150  -1500 3100  4040 3100))
-      (outline (path signal 150  -1500 -3100  -1500 3100))
-      (outline (path signal 150  -1500 -3100  4040 -3100))
-      (pin Round[A]Pad_1750_um 2 2540 0)
-      (pin Round[A]Pad_1750_um 1 0 0)
-      (keepout "" (circle F.Cu 1000 2540 -2540))
-      (keepout "" (circle B.Cu 1000 2540 -2540))
-      (keepout "" (circle F.Cu 1000 0 -2540))
-      (keepout "" (circle B.Cu 1000 0 -2540))
     )
     (image "TerminalBlocks:MB312-254_TerminalBlock_3Way"
       (outline (path signal 150  6580 3100  6580 -3100))
@@ -500,38 +501,91 @@
       (keepout "" (circle F.Cu 1000 5080 -2540))
       (keepout "" (circle B.Cu 1000 5080 -2540))
     )
-    (image "TerminalBlocks:MB312-254_TerminalBlock_2Way::1"
-      (outline (path signal 150  -1500 -3100  4040 -3100))
+    (image MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad
+      (outline (path signal 50  4050 0  3972.18 -790.116  3741.71 -1549.87  3367.45 -2250.06
+            2863.78 -2863.78  2250.06 -3367.45  1549.87 -3741.71  790.116 -3972.18
+            0 -4050  -790.116 -3972.18  -1549.87 -3741.71  -2250.06 -3367.45
+            -2863.78 -2863.78  -3367.45 -2250.06  -3741.71 -1549.87  -3972.18 -790.116
+            -4050 0  -3972.18 790.116  -3741.71 1549.87  -3367.45 2250.06
+            -2863.78 2863.78  -2250.06 3367.45  -1549.87 3741.71  -790.116 3972.18
+            0 4050  790.116 3972.18  1549.87 3741.71  2250.06 3367.45  2863.78 2863.78
+            3367.45 2250.06  3741.71 1549.87  3972.18 790.116  4050 0))
+      (outline (path signal 150  3800 0  3722.21 -764.934  3492.04 -1498.55  3118.9 -2170.82
+            2618.07 -2754.21  2010.06 -3224.85  1319.76 -3563.46  575.426 -3756.18
+            -192.467 -3795.12  -952.48 -3678.69  -1673.5 -3411.66  -2326 -3004.95
+            -2883.28 -2475.22  -3322.52 -1844.15  -3625.73 -1137.58  -3780.5 -384.44
+            -3780.5 384.44  -3625.73 1137.58  -3322.52 1844.15  -2883.28 2475.22
+            -2326 3004.95  -1673.5 3411.66  -952.48 3678.69  -192.467 3795.12
+            575.426 3756.18  1319.76 3563.46  2010.06 3224.85  2618.07 2754.21
+            3118.9 2170.82  3492.04 1498.55  3722.21 764.934  3800 0))
+      (pin Round[A]Pad_7600_um 1 0 0)
+    )
+    (image MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad::1
+      (outline (path signal 150  3800 0  3722.21 -764.934  3492.04 -1498.55  3118.9 -2170.82
+            2618.07 -2754.21  2010.06 -3224.85  1319.76 -3563.46  575.426 -3756.18
+            -192.467 -3795.12  -952.48 -3678.69  -1673.5 -3411.66  -2326 -3004.95
+            -2883.28 -2475.22  -3322.52 -1844.15  -3625.73 -1137.58  -3780.5 -384.44
+            -3780.5 384.44  -3625.73 1137.58  -3322.52 1844.15  -2883.28 2475.22
+            -2326 3004.95  -1673.5 3411.66  -952.48 3678.69  -192.467 3795.12
+            575.426 3756.18  1319.76 3563.46  2010.06 3224.85  2618.07 2754.21
+            3118.9 2170.82  3492.04 1498.55  3722.21 764.934  3800 0))
+      (outline (path signal 50  4050 0  3972.18 -790.116  3741.71 -1549.87  3367.45 -2250.06
+            2863.78 -2863.78  2250.06 -3367.45  1549.87 -3741.71  790.116 -3972.18
+            0 -4050  -790.116 -3972.18  -1549.87 -3741.71  -2250.06 -3367.45
+            -2863.78 -2863.78  -3367.45 -2250.06  -3741.71 -1549.87  -3972.18 -790.116
+            -4050 0  -3972.18 790.116  -3741.71 1549.87  -3367.45 2250.06
+            -2863.78 2863.78  -2250.06 3367.45  -1549.87 3741.71  -790.116 3972.18
+            0 4050  790.116 3972.18  1549.87 3741.71  2250.06 3367.45  2863.78 2863.78
+            3367.45 2250.06  3741.71 1549.87  3972.18 790.116  4050 0))
+      (pin Round[A]Pad_7600_um 1 0 0)
+    )
+    (image TerminalBlocks:5.08_PCB_2Way
+      (outline (path signal 150  -3500 4500  -3500 -3500))
+      (outline (path signal 150  8500 4500  8500 -3500))
+      (outline (path signal 150  -3500 4500  8500 4500))
+      (outline (path signal 150  -3500 -3500  -3500 -4500))
+      (outline (path signal 150  -3500 -4500  8500 -4500))
+      (outline (path signal 150  8500 -4500  8500 -3500))
+      (outline (path signal 150  -500 -3500  -500 -4500))
+      (outline (path signal 150  500 -3500  500 -4500))
+      (outline (path signal 150  4500 -3500  4500 -4500))
+      (outline (path signal 150  5500 -3500  5500 -4500))
+      (outline (path signal 150  -500 -3500  -3500 -3500))
+      (outline (path signal 150  500 -3500  4500 -3500))
+      (outline (path signal 150  5500 -3500  8500 -3500))
+      (pin Round[A]Pad_2000_um 1 0 0)
+      (pin Round[A]Pad_2000_um 2 5080 0)
+    )
+    (image "TerminalBlocks:MB312-254_TerminalBlock_4Way"
+      (outline (path signal 150  -1500 -3100  9120 -3100))
       (outline (path signal 150  -1500 -3100  -1500 3100))
-      (outline (path signal 150  -1500 3100  4040 3100))
-      (outline (path signal 150  4040 3100  4040 -3100))
+      (outline (path signal 150  -1500 3100  9120 3100))
+      (outline (path signal 150  9120 3100  9120 -3100))
+      (pin Round[A]Pad_1750_um 4 7620 0)
       (pin Round[A]Pad_1750_um 1 0 0)
       (pin Round[A]Pad_1750_um 2 2540 0)
+      (pin Round[A]Pad_1750_um 3 5080 0)
+      (keepout "" (circle F.Cu 1000 7620 -2540))
+      (keepout "" (circle B.Cu 1000 7620 -2540))
       (keepout "" (circle F.Cu 1000 0 -2540))
       (keepout "" (circle B.Cu 1000 0 -2540))
       (keepout "" (circle F.Cu 1000 2540 -2540))
       (keepout "" (circle B.Cu 1000 2540 -2540))
+      (keepout "" (circle F.Cu 1000 5080 -2540))
+      (keepout "" (circle B.Cu 1000 5080 -2540))
+    )
+    (image "Package_TO_SOT_THT:TO-92_HandSolder"
+      (outline (path signal 120  -530 -1850  3070 -1850))
+      (outline (path signal 100  -500 -1750  3000 -1750))
+      (outline (path signal 50  -1460 3050  4000 3050))
+      (outline (path signal 50  -1450 3050  -1460 -2010))
+      (outline (path signal 50  4000 -2010  4000 3050))
+      (outline (path signal 50  4000 -2010  -1460 -2010))
+      (pin RoundRect[A][0,400]Pad_1100x1800_276.046_um 2 1270 1270)
+      (pin "RoundRect[A][0,-400]Pad_1100x1800_276.046_um" 3 2540 0)
+      (pin "Rect[A][0,-400]Pad_1100x1800_um" 1 0 0)
     )
     (image Logo:logo
-    )
-    (image MountingHole:MountingHole_4.3mm_M4_DIN965_Pad
-      (outline (path signal 50  4000 0  3918.12 -805.194  3675.83 -1577.42  3283.05 -2285.07
-            2755.87 -2899.17  2115.86 -3394.58  1389.22 -3751.01  605.711 -3953.87
-            -202.597 -3994.87  -1002.61 -3872.31  -1761.58 -3591.22  -2448.42 -3163.1
-            -3035.03 -2605.49  -3497.39 -1941.21  -3816.56 -1197.45  -3979.48 -404.673
-            -3979.48 404.673  -3816.56 1197.45  -3497.39 1941.21  -3035.03 2605.49
-            -2448.42 3163.1  -1761.58 3591.22  -1002.61 3872.31  -202.597 3994.87
-            605.711 3953.87  1389.22 3751.01  2115.86 3394.58  2755.87 2899.17
-            3283.05 2285.07  3675.83 1577.42  3918.12 805.194  4000 0))
-      (outline (path signal 150  3750 0  3668.05 -779.669  3425.8 -1525.26  3033.81 -2204.2
-            2509.24 -2786.79  1875 -3247.59  1158.81 -3566.46  391.982 -3729.46
-            -391.982 -3729.46  -1158.81 -3566.46  -1875 -3247.59  -2509.24 -2786.79
-            -3033.81 -2204.2  -3425.8 -1525.26  -3668.05 -779.669  -3750 0
-            -3668.05 779.669  -3425.8 1525.26  -3033.81 2204.2  -2509.24 2786.79
-            -1875 3247.59  -1158.81 3566.46  -391.982 3729.46  391.982 3729.46
-            1158.81 3566.46  1875 3247.59  2509.24 2786.79  3033.81 2204.2
-            3425.8 1525.26  3668.05 779.669  3750 0))
-      (pin Round[A]Pad_7500_um 1 0 0)
     )
     (padstack Round[A]Pad_1500_um
       (shape (circle F.Cu 1500))
@@ -563,9 +617,9 @@
       (shape (circle B.Cu 2400))
       (attach off)
     )
-    (padstack Round[A]Pad_7500_um
-      (shape (circle F.Cu 7500))
-      (shape (circle B.Cu 7500))
+    (padstack Round[A]Pad_7600_um
+      (shape (circle F.Cu 7600))
+      (shape (circle B.Cu 7600))
       (attach off)
     )
     (padstack Oval[A]Pad_1600x1600_um
@@ -664,8 +718,8 @@
       (pins C1-1 R2-2 U1-2 U1-6)
     )
     (net GND
-      (pins C1-2 C2-2 C3-2 C4-1 C5-1 C6-2 C7-2 J1-4 R4-2 R8-2 U1-1 U2-8 U2-22 Q1-1
-        J3-3 BZ1-2 J4-3 J5-3 J6-2)
+      (pins U3-3 C1-2 C2-2 C3-2 C4-1 C5-1 C6-2 C7-2 J1-4 R4-2 U1-1 U2-8 U2-22 J3-3
+        BZ1-2 J4-3 J5-3 H1-1 H2-1 H3-1 H4-1 J6-3 J7-3 J8-3 J10-4 Q1-1)
     )
     (net "Net-(C2-Pad1)"
       (pins C2-1 U1-5)
@@ -683,25 +737,11 @@
       (pins C6-1 U2-21)
     )
     (net VCC
-      (pins C7-1 J1-6 R1-1 R9-2 U1-4 U1-8 U2-20 U2-7 J4-2 J5-2 J6-1)
+      (pins U3-4 C7-1 J1-6 R1-1 U1-4 U1-8 U2-20 U2-7 J4-2 J5-2 J2-3 R10-2 J6-2 J7-2
+        J8-2 J10-3)
     )
     (net "Net-(D1-Pad2)"
-      (pins D1-2 R3-1 J2-2)
-    )
-    (net /MISO
-      (pins J1-1 U2-18)
-    )
-    (net /SCK
-      (pins J1-2 U2-19)
-    )
-    (net /RESET
-      (pins J1-3 R9-1 U2-1)
-    )
-    (net /MOSI
-      (pins J1-5 U2-17)
-    )
-    (net "Net-(J2-Pad1)"
-      (pins R5-2 Q1-3 J2-1)
+      (pins D1-2 R3-1 J2-1)
     )
     (net "Net-(J3-Pad1)"
       (pins R6-2 J3-1)
@@ -709,14 +749,8 @@
     (net "Net-(J3-Pad2)"
       (pins R5-1 J3-2)
     )
-    (net /PD4
-      (pins U2-6 J4-1)
-    )
-    (net /PD5
-      (pins U2-11 J5-1)
-    )
     (net "Net-(Q1-Pad2)"
-      (pins R7-2 R8-1 Q1-2)
+      (pins R7-2 Q1-2)
     )
     (net "Net-(R1-Pad2)"
       (pins R1-2 R2-1 U1-7)
@@ -727,16 +761,62 @@
     (net "Net-(R6-Pad1)"
       (pins R6-1 U2-12)
     )
+    (net BZR
+      (pins U2-5 BZ1-1)
+    )
+    (net MISO
+      (pins J1-1 U2-18)
+    )
+    (net SCK
+      (pins J1-2 U2-19)
+    )
+    (net RESET
+      (pins J1-3 U2-1 R10-1)
+    )
+    (net MOSI
+      (pins J1-5 U2-17)
+    )
+    (net "Net-(J2-Pad2)"
+      (pins J2-2 Q1-3)
+    )
+    (net PD4
+      (pins U2-6 J4-1)
+    )
+    (net PD5
+      (pins U2-11 J5-1)
+    )
+    (net PWR_LED
+      (pins R5-2 U2-15)
+    )
+    (net PC1
+      (pins U2-24 J6-1)
+    )
+    (net PC2
+      (pins U2-25 J7-1)
+    )
+    (net PC3
+      (pins U2-26 J8-1)
+    )
+    (net "Net-(J9-Pad1)"
+      (pins U3-2 J9-1)
+    )
+    (net "Net-(J9-Pad2)"
+      (pins U3-1 J9-2)
+    )
+    (net SDA
+      (pins U2-27 J10-1)
+    )
+    (net SCL
+      (pins U2-28 J10-2)
+    )
     (net "Net-(R7-Pad1)"
       (pins R7-1 U2-13)
     )
-    (net /BZR
-      (pins U2-5 BZ1-1)
-    )
-    (class kicad_default "" /BZR /MISO /MOSI /PD4 /PD5 /RESET /SCK GND "Net-(C1-Pad1)"
-      "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(C4-Pad2)" "Net-(C5-Pad2)" "Net-(C6-Pad1)"
-      "Net-(D1-Pad2)" "Net-(J2-Pad1)" "Net-(J3-Pad1)" "Net-(J3-Pad2)" "Net-(Q1-Pad2)"
-      "Net-(R1-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad1)" "Net-(R7-Pad1)" VCC
+    (class kicad_default "" BZR GND MISO MOSI "Net-(C1-Pad1)" "Net-(C2-Pad1)"
+      "Net-(C3-Pad1)" "Net-(C4-Pad2)" "Net-(C5-Pad2)" "Net-(C6-Pad1)" "Net-(D1-Pad2)"
+      "Net-(J2-Pad2)" "Net-(J3-Pad1)" "Net-(J3-Pad2)" "Net-(J9-Pad1)" "Net-(J9-Pad2)"
+      "Net-(Q1-Pad2)" "Net-(R1-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad1)" "Net-(R7-Pad1)"
+      PC1 PC2 PC3 PD4 PD5 PWR_LED RESET SCK SCL SDA VCC
       (circuit
         (use_via Via[0-1]_800:400_um)
       )

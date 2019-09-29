@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1076)
+    (start_pass_no 933)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.2)
+      (against_preferred_direction_trace_costs 2.0)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.0)
     )
   )
   (rule
@@ -64,8 +64,9 @@
   )
   (class "kicad_default"
     "Net-(C1-Pad1)" GND "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(C4-Pad2)" "Net-(C5-Pad2)" "Net-(C6-Pad1)" VCC
-    "Net-(D1-Pad2)" /MISO /SCK /RESET /MOSI "Net-(J2-Pad1)" "Net-(J3-Pad1)" "Net-(J3-Pad2)"
-    /PD4 /PD5 "Net-(Q1-Pad2)" "Net-(R1-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad1)" "Net-(R7-Pad1)" /BZR
+    "Net-(D1-Pad2)" "Net-(J3-Pad1)" "Net-(J3-Pad2)" "Net-(Q1-Pad2)" "Net-(R1-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad1)" BZR
+    MISO SCK RESET MOSI "Net-(J2-Pad2)" PD4 PD5 "PWR_LED"
+    PC1 PC2 PC3 "Net-(J9-Pad1)" "Net-(J9-Pad2)" SDA SCL "Net-(R7-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
