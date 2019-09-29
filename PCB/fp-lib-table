@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name PCB)(type KiCad)(uri /home/andy/Projects/Electronics/MaquinaSafetyLevel/PCB)(options "")(descr ""))
+  (lib (name Logo)(type KiCad)(uri ${KIPRJMOD}/Logo.pretty)(options "")(descr ""))
+)
